@@ -1,0 +1,37 @@
+#root {
+  position: relative;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.text-purple {
+  color: #6c39ff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0px 0px 23px 0px rgba(34, 60, 80, 0.2);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}

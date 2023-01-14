@@ -1,0 +1,45 @@
+.toast-container {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0px 0px 23px 0px rgba(34, 60, 80, 0.2);
+
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.toast-container--error {
+  color: red;
+}
+.toast-container--success {
+  color: green;
+}
+
+.toast-container__message {
+  margin-top: 1rem;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
