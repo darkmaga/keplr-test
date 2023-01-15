@@ -50,7 +50,8 @@ function App() {
         fee,
         ''
       )
-      assertIsBroadcastTxSuccess(result)
+      //TODO: check this method
+      // assertIsBroadcastTxSuccess(result)
 
       if (result.code !== 0 && result.code !== undefined) {
         setToast({ type: 'error', message: result.log || result.rawLog })
@@ -93,7 +94,7 @@ function App() {
           Hello, <span className='text-purple'>{userInfo || 'stranger'}</span>
         </h2>
         <div className='container'>
-          <p>Send Tokens</p>
+          <p>Send Tokens via Osmosis</p>
           <div className='input-container'>
             <input
               type='text'

@@ -1,1 +1,1 @@
-export const CHAIN_ID = 'osmosis-4'
+export const CHAIN_ID = 'osmosis-1'
